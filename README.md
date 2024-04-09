@@ -2,14 +2,11 @@
 开箱即用、本地优先的 MySQL 发行版，开源 RDS 替代
 
 <div align="center">
-<img src="img/SQLE_logo.png">
 
 
 <p align="center">一个支持多种不同类型数据库，覆盖事前控制、事后监督、标准发布场景，帮助您建立质量规范的SQL全生命周期质量管理平台。</p>
 <p align="center">每周发版，快速迭代中</p>
 
-
-简体中文 | [English](./README_en.md)
 
 
 [![Release](https://img.shields.io/github/release/actiontech/sqle.svg?style=flat-square)](https://github.com/actiontech/sqle/releases)
