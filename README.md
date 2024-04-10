@@ -42,10 +42,10 @@
 #### Docker
 
 ```bash
-##下载配置文件
+## 下载配置文件
 wget -P /usr/local/src https://github.com/guofushan/DATAStack/releases/download/v1.1/datastack.cfg
 
-##修改配置文件
+## 修改配置文件
 vi /usr/local/src/datastack.cfg
 
 [section]
@@ -62,14 +62,13 @@ report_email=['1031059192@qq.com']
 #定义datastack部署节点ip
 datastack_ip=192.168.56.1
 
-##容器启动
+## 容器启动
 docker run -d -it guofushan/testos /bin/bash
 
-#访问 DATAStack平台
+# 访问 DATAStack平台
 http://部署节点IP:8004
 ```
 </p>
-<img src="img/record.png" style="width: 1000px" />
 
 
 ## 联系我们
