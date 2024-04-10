@@ -1,4 +1,4 @@
-![image](https://github.com/guofushan/DATAStack/assets/48540932/576d7413-516f-4823-b670-341f153d83d2)<div align="center">
+<div align="center">
 
 <h1 style="border-bottom: none">
     <b>DATAStack</b><br />
