@@ -76,7 +76,7 @@ docker run -d -it guofushan/testos /bin/bash
 http://部署节点IP:8004
 ```
 ## 页面概况
-![image](https://github.com/guofushan/DATAStack/assets/48540932/19beb07d-684e-4e79-b35c-87af591f0548)
+![image](https://github.com/guofushan/DATAStack/assets/48540932/f87aa1cf-b8f1-46c1-9b48-5fae55d8b2f9)
 ![image](https://github.com/guofushan/DATAStack/assets/48540932/d8ae85cf-545c-4c0d-be32-b5ce1acc51c9)
 
 </p>
