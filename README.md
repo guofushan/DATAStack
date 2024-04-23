@@ -6,8 +6,8 @@
     <br>
 </h1>
 <p>
-一款开箱即用的公有云RDS替代者<br />
-本地部署，安全高效，私有云数据库服务，公有云RDS 替代
+开箱即用的一站式数据库管理平台<br />
+本地部署，安全高效，私有云数据库服务，公有云RDS 替代，下云首选
 </p>
 </div>
 <div align="center">
@@ -19,12 +19,19 @@
 
 </div>
 
-## DATAStack是什么
-- **降低成本** - 对比公有云RDS的价格，使用DATAStack能够大大降低数据库使用成本，降幅在50%。
+# DATAStack是什么
+DATAStack是一站式数据库管理平台，数据库服务包括OLTP(MySQL)，满足企业对数据生产和集成、数据实时处理、数据分析和发现、数据开发和管理的全方位数据需求，帮助企业快速构建稳定、安全、经济的全场景数据库解决方案。
+
+
+# 产品优势
+- **降低成本** - 对比公有云RDS的价格，使用DATAStack能够降低数据库使用成本。
 - **安全高效** - 本地化部署DATAStack，一键拉起数据库高可用集群。
 - **低耦合** - DATAStack与数据库服务低耦合关系，在极端情况下数据库稳定性不受DATAStack平台影响。
+- **跨基础设施的平台服务** - 灵活部署，良好的跨平台性，可运行在物理服务器或虚拟机中，支持多种Linux操作系统。
+- **全面运维体系及领域专家支持**  - 提供7*24小时的数据库领域专家支持，实时解惑答疑。(企业版支持)
 
-## 功能
+
+# 产品功能
 - **创建数据库实例** - 支持MySQL单实例/高可用实例一键部署。
 - **创建DB** - 支持数据库创建、查看功能。
 - **权限管理** - 支持页面化操作：创建用户、角色授权。
@@ -34,9 +41,8 @@
 - **数据库监控** - 内置linux、MySQL监控模块。
 - **备份恢复** - 内置数据库备份模块，保证数据一致稳定。
 - **MySQL高可用** - 集成Orchestrator、Consul服务，做到故障灵活切换，服务不宕机。
-- **定时任务** - 内置定时任务模块，可通过页面配置定时任务。
 
-## 在线试用
+# 在线试用
 - [点击在线体验](http://10.88.28.13:8004/)
 
 **登录信息**
@@ -44,15 +50,21 @@
 |---|---|
 |admin|rootroot|
 
-## 安装
+# 安装
 
-#### Docker
+### Docker
 
 ```bash
-## 下载配置文件
-wget -P /usr/local/src https://github.com/guofushan/DATAStack/releases/download/v1.1/datastack.cfg
+# 1.创建/app路径
+/app作为DATAStack的数据存储路径，请先创建/app目录并分配磁盘空间。
 
-## 修改配置文件
+# 2.下载配置文件
+## Github下载
+wget -P /usr/local/src https://github.com/guofushan/DATAStack/releases/download/v1.1/datastack.cfg
+## 或者Gitee下载
+wget -P /usr/local/src https://gitee.com/guofushan/DATAStack/releases/download/v1.1/datastack.cfg
+
+# 3.修改配置文件
 vi /usr/local/src/datastack.cfg
 
 [section]
@@ -69,20 +81,24 @@ report_email=['1031059192@qq.com']
 #定义datastack部署节点ip
 datastack_ip=192.168.56.1
 
-## 容器启动
-docker run -d -it guofushan/testos /bin/bash
+# 4.容器启动
+docker run -d -v /usr/local/src/datastack.cfg:/app/datastack.cfg -it -p 8004:8004 -p 5001:5001 -p 9090:9090 -p 9093:9093 -p 3001:3001 guofushan/datastack:latest
 
-# 访问 DATAStack平台
+# 5.访问 DATAStack平台
 http://部署节点IP:8004
 ```
-## 页面概况
-![image](https://github.com/guofushan/DATAStack/assets/48540932/f87aa1cf-b8f1-46c1-9b48-5fae55d8b2f9)
-![image](https://github.com/guofushan/DATAStack/assets/48540932/d8ae85cf-545c-4c0d-be32-b5ce1acc51c9)
+# 页面概况
+![22](https://github.com/guofushan/DATAStack/assets/48540932/a3bf73e1-b0d0-4e0c-8755-0ebb1622a004)
+![clipboard4](https://github.com/guofushan/DATAStack/assets/48540932/0b23513b-9a12-43d8-aaf7-d1381fa7fda6)
+![11](https://github.com/guofushan/DATAStack/assets/48540932/1ac2cd3c-f7d6-4cfc-9100-2304ab04766f)
+![6](https://github.com/guofushan/DATAStack/assets/48540932/a107b858-693b-47ac-a55c-b53cc8917560)
 
 </p>
+===============
+# 问题反馈
+- Bug提交：[Issues](https://github.com/guofushan/DATAStack/issues)
 
-
-## 联系我们
+# 联系我们
 
 E-mail: 1031059192@qq.com
 
