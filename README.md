@@ -55,16 +55,13 @@ DATAStack是一站式数据库管理平台，数据库服务包括OLTP(MySQL)，
 ### Docker
 
 ```bash
-# 1.创建/app路径
-/app作为DATAStack的数据存储路径，请先创建/app目录并分配磁盘空间。
-
-# 2.下载配置文件
+# 1.下载配置文件
 ## Github下载
 wget -P /usr/local/src https://github.com/guofushan/DATAStack/releases/download/v1.1/datastack.cfg
 ## 或者Gitee下载
 wget -P /usr/local/src https://gitee.com/guofushan/DATAStack/releases/download/v1.1/datastack.cfg
 
-# 3.修改配置文件
+# 2.修改配置文件
 vi /usr/local/src/datastack.cfg
 
 [section]
@@ -81,11 +78,17 @@ report_email=['1031059192@qq.com']
 #定义datastack部署节点ip
 datastack_ip=192.168.56.1
 
-# 4.容器启动
+# 3.创建DB并授权(在后端mysql数据源操作)
+create database yandi；
+grant all on yandi.* to yunwei@'1%' identified by '123456';
+flush privileges;
+
+# 4.容器启动 (需提前部署docker服务)
 docker run -d -v /usr/local/src/datastack.cfg:/app/datastack.cfg -it -p 8004:8004 -p 5001:5001 -p 9090:9090 -p 9093:9093 -p 3001:3001 guofushan/datastack:latest
 
 # 5.访问 DATAStack平台
 http://部署节点IP:8004
+
 ```
 # 页面概况
 ![22](https://github.com/guofushan/DATAStack/assets/48540932/a3bf73e1-b0d0-4e0c-8755-0ebb1622a004)
