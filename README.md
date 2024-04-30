@@ -43,7 +43,7 @@ DATAStack是一站式数据库管理平台，数据库服务包括OLTP(MySQL)，
 - **MySQL高可用** - 集成Orchestrator、Consul服务，做到故障灵活切换，服务不宕机。
 
 # 在线试用
-- [点击在线体验](http://10.88.28.13:8004/)
+- [点击在线体验](http://59.110.126.94:8004/)
 
 **登录信息**
 |user|password|
@@ -65,22 +65,22 @@ wget -P /usr/local/src https://gitee.com/guofushan/DATAStack/releases/download/v
 vi /usr/local/src/datastack.cfg
 
 [section]
-#定义后端mysql数据源信息
+#后端mysql数据源信息
 mysqlip=192.168.56.1
 mysqluser=yunwei
 mysqlport=35972
 mysqlpwd=123456
-#定义os用户密码
+#os用户密码
 root_user=root
 root_pwd=123456
 #告警邮箱
 report_email=['1031059192@qq.com']
-#定义datastack部署节点ip
+#datastack部署节点ip
 datastack_ip=192.168.56.1
 
 # 3.创建DB并授权(在后端mysql数据源操作)
 create database yandi；
-grant all on yandi.* to yunwei@'1%' identified by '123456';
+grant all on *.* to yunwei@'%' identified by '123456';
 flush privileges;
 
 # 4.容器启动 (需提前部署docker服务)
@@ -91,15 +91,24 @@ http://部署节点IP:8004
 
 ```
 # 页面概况
+![11](https://github.com/guofushan/DATAStack/assets/48540932/1ac2cd3c-f7d6-4cfc-9100-2304ab04766f)
 ![22](https://github.com/guofushan/DATAStack/assets/48540932/a3bf73e1-b0d0-4e0c-8755-0ebb1622a004)
 ![clipboard4](https://github.com/guofushan/DATAStack/assets/48540932/0b23513b-9a12-43d8-aaf7-d1381fa7fda6)
-![11](https://github.com/guofushan/DATAStack/assets/48540932/1ac2cd3c-f7d6-4cfc-9100-2304ab04766f)
 ![6](https://github.com/guofushan/DATAStack/assets/48540932/a107b858-693b-47ac-a55c-b53cc8917560)
 
 </p>
 
+版本对比
+====
+
+| 版本        | 支持MySQL | 数据库高可用 | 备份 | 监控  | 慢日志  | 账号管理 |个性化定制 |7*24小时数据库专家支持  |无实例限制(20个)|
+|------------| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 社区版      | √ | √ | √ | √ | √ | √ | × | × | × |  |
+| 企业版      | √ | √ | √ | √ | √ | √ | √ | √ | √ | |
+
 # 问题反馈
 - Bug提交：[Issues](https://github.com/guofushan/DATAStack/issues)
+
 
 # 联系我们
 
@@ -107,3 +116,9 @@ E-mail: 1031059192@qq.com
 
 DATAStack 使用交流QQ群:  775117644 <br />
 
+# 赞助
+
+DATAStack的发展离不开社区的力量。<br />
+赞助DATAStack使作者持续完善并开发新的功能。
+
+![clipboard](https://github.com/guofushan/DATAStack/assets/48540932/946734af-9450-42fc-a11a-e822f7feda43)
