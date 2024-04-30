@@ -91,9 +91,9 @@ http://部署节点IP:8004
 ```
 # 页面概况
 ![11](https://github.com/guofushan/DATAStack/assets/48540932/1ac2cd3c-f7d6-4cfc-9100-2304ab04766f)
-![22](https://github.com/guofushan/DATAStack/assets/48540932/a3bf73e1-b0d0-4e0c-8755-0ebb1622a004)
 ![clipboard4](https://github.com/guofushan/DATAStack/assets/48540932/0b23513b-9a12-43d8-aaf7-d1381fa7fda6)
-![6](https://github.com/guofushan/DATAStack/assets/48540932/a107b858-693b-47ac-a55c-b53cc8917560)
+![clipboard2](https://github.com/guofushan/DATAStack/assets/48540932/da86cb73-967d-4c40-bb09-35d63306a816)
+![clipboard1](https://github.com/guofushan/DATAStack/assets/48540932/7daf1014-cea4-4bab-8c3d-4d232b40acf8)
 
 
 # 版本对比
