@@ -2,12 +2,12 @@
 
 <h1 style="border-bottom: none">
     <b>DATAStack</b><br />
-        安全, 高效的数据库私有云
+        安全高效的数据库私有云
     <br>
 </h1>
 <p>
-开箱即用的一站式数据库管理平台<br />
-本地部署，安全高效，私有云数据库服务，公有云RDS 替代，下云首选
+开箱即用的企业级数据库私有云平台<br />
+本地部署，安全高效，数据库私有云平台，公有云RDS 替代，下云首选
 </p>
 </div>
 <div align="center">
@@ -20,10 +20,10 @@
 </div>
 
 # DATAStack是什么
-DATAStack是一站式数据库管理平台，数据库服务包括OLTP(MySQL)、NoSQL(Redis)，满足企业对数据生产和集成、数据实时处理、数据分析和发现、数据开发和管理的全方位数据需求，帮助企业快速构建稳定、安全、经济的全场景数据库解决方案。为中小微企业提供一站式数据库服务。
+DATAStack是一站式数据库私有云平台，为企业用户提供数据库即服务（DBaaS）的产品。产品已覆盖MySQL、Redis、MongoDB，可无缝运行在ZStack、华为云、DaoCloud、华云数据、浪潮云、VMware等私有云IaaS平台。帮助企业快速构建稳定、安全、经济的全场景数据库解决方案。
 
 # 产品优势
-- **降低成本** -对比各数据库私有云、公有云厂商，DATAStack极具性价比；使用DATAStack能够降低数据库使用成本。
+- **降低成本** -对比各数据库厂商，DATAStack极具性价比；使用DATAStack能够降低数据库使用成本。
 - **多云融合** - 可无缝运行在ZStack、华为云、DaoCloud、华云数据、浪潮云、VMware等私有云IaaS平台。
 - **跨基础设施的平台服务** - 灵活部署，良好的跨平台性，可运行在物理服务器或虚拟机中，支持多种Linux操作系统。
 - **安全高效** - 本地化部署DATAStack，一键拉起数据库高可用集群。
@@ -32,13 +32,12 @@ DATAStack是一站式数据库管理平台，数据库服务包括OLTP(MySQL)、
 
 
 # 产品功能
-- **数据库引擎服务** - 支持主流数据库MySQL、Redis。
-- **集群创建** - 支持MySQL单实例/高可用实例一键部署。
-- **数据库监控** - 内置linux、MySQL监控模块。
+- **数据库引擎服务** - 支持主流数据库MySQL、Redis、MongoDB。
+- **集群创建** - 支持数据库实例一键部署。
+- **数据库监控** - 内置OS、DB层链路监控模块。
 - **自动备份** - 支持自定义备份策略，确保数据安全一致稳定。
-- **高可用** - 集成Orchestrator、Consul服务，做到故障灵活切换，服务不宕机。
-- **创建DB** - 支持数据库创建、查看功能。
-- **权限管理** - 支持页面化操作：创建用户、角色授权。
+- **高可用** - 秒级探测和切换，90%连接保持无影响。
+- **权限管理** - 支持页面化管理，创建用户、角色授权。
 - **日志查看** - 支持页面汇总展示近期慢SQL。
 - **Binlog回滚** - 支持页面操作解析binlog生成相应的SQL和回滚SQL。
 - **TOP SQL** - 汇总展示SQL执行频率统计，协助数据库性能诊断排查。
@@ -87,7 +86,7 @@ grant all on *.* to yunwei@'%' identified by '123456';
 flush privileges;
 
 # 4.容器启动 (需提前部署docker服务)
-docker run -d -v /usr/local/src/datastack.cfg:/app/datastack.cfg -it -p 8004:8004 -p 5001:5001 -p 9090:9090 -p 9093:9093 -p 3001:3001 guofushan/datastack:latest
+docker run -d -v /usr/local/src/datastack.cfg:/app/datastack.cfg -it -p 8004:8004 -p 5001:5001 -p 9090:9090 -p 9093:9093 -p 3001:3001 registry.cn-beijing.aliyuncs.com/datastack/datastack:latest
 
 # 5.访问 DATAStack平台
 http://部署节点IP:8004
@@ -123,5 +122,3 @@ DATAStack 使用交流QQ群:  775117644 <br />
 
 DATAStack的发展离不开社区的力量。<br />
 赞助DATAStack使作者持续完善并开发新的功能。
-
-![clipboard](https://github.com/guofushan/DATAStack/assets/48540932/946734af-9450-42fc-a11a-e822f7feda43)
