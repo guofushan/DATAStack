@@ -2,12 +2,12 @@
 
 <h1 style="border-bottom: none">
     <b>DATAStack</b><br />
-        安全高效的数据库私有云
+        全球首款免费的数据库私有云
     <br>
 </h1>
 <p>
 开箱即用的企业级数据库私有云平台<br />
-本地部署，安全高效，数据库私有云平台，公有云RDS 替代，下云首选
+本地部署，安全高效，数据库私有云平台，公有云RDS替代，下云首选，完全免费
 </p>
 </div>
 <div align="center">
@@ -20,16 +20,14 @@
 </div>
 
 # DATAStack是什么
-DATAStack是一站式数据库私有云平台，为企业用户提供数据库即服务（DBaaS）的产品。产品已覆盖MySQL、Redis、MongoDB，可无缝运行在ZStack、华为云、DaoCloud、华云数据、浪潮云、VMware等私有云IaaS平台。帮助企业快速构建稳定、安全、经济的全场景数据库解决方案。
+DATAStack是一款数据库私有云平台，为企业用户提供数据库即服务（DBaaS）的产品。产品已覆盖MySQL、Redis、MongoDB，可无缝运行在ZStack、华为云、DaoCloud、华云数据、浪潮云、VMware等私有云IaaS平台。帮助企业快速构建稳定、安全、经济的全场景数据库解决方案。
 
 # 产品优势
-- **降低成本** -对比各数据库厂商，DATAStack极具性价比；使用DATAStack能够降低数据库使用成本。
+- **降低成本** -对比各数据库厂商，DATAStack完全免费；使用DATAStack能够降低数据库基础建设使用成本。
 - **多云融合** - 可无缝运行在ZStack、华为云、DaoCloud、华云数据、浪潮云、VMware等私有云IaaS平台。
 - **跨基础设施的平台服务** - 灵活部署，良好的跨平台性，可运行在物理服务器或虚拟机中，支持多种Linux操作系统。
 - **安全高效** - 本地化部署DATAStack，一键拉起数据库高可用集群。
 - **低耦合** - DATAStack与数据库服务低耦合关系，在极端情况下数据库稳定性不受DATAStack平台影响。
-- **全面运维体系及领域专家支持**  - 提供7*24小时的数据库领域专家支持，实时解惑答疑。
-
 
 # 产品功能
 - **数据库引擎服务** - 支持主流数据库MySQL、Redis、MongoDB。
@@ -99,23 +97,11 @@ http://部署节点IP:8004
 ![1](https://github.com/guofushan/DATAStack/assets/48540932/ece697ea-c461-4dc7-bcfc-18c9f9d60fed)
 ![2](https://github.com/guofushan/DATAStack/assets/48540932/3c10e361-bd13-47e1-82d8-6d316de2ea56)
 
-
-# 版本对比
-
-| 版本       | 支持MySQL |支持Redis| 数据库高可用 | 备份 | 监控  | 慢日志  | 账号管理 |个性化定制 |7*24小时数据库专家支持  |无实例限制(10个)|
-|-----------| --- |---| --- | --- | --- | --- | --- | --- | --- | --- |
-| 社区版     | √ |√| √ | √ | √ | √ | √ | × | × | × | 
-| 企业版     | √ |√| √ | √ | √ | √ | √ | √ | √ | √ |
-
-
 # 问题反馈
 - Bug提交：[Issues](https://github.com/guofushan/DATAStack/issues)
 
 
 # 联系我们
-
-E-mail: 1031059192@qq.com
-
 DATAStack 使用交流QQ群:  775117644 <br />
 
 # 赞助
