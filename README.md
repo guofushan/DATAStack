@@ -79,7 +79,7 @@ report_email=['1031059192@qq.com']
 datastack_ip=192.168.56.1
 
 # 3.创建DB并授权(在后端mysql数据源操作)
-create database yandi；
+create database yandi;
 grant all on *.* to yunwei@'%' identified by '123456';
 flush privileges;
 
