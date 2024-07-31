@@ -2,7 +2,7 @@
 
 <h1 style="border-bottom: none">
     <b>DATAStack</b><br />
-        全球首款免费的数据库私有云
+        一款免费的数据库私有云
     <br>
 </h1>
 <p>
@@ -84,7 +84,7 @@ grant all on *.* to yunwei@'%' identified by '123456';
 flush privileges;
 
 # 4.容器启动 (需提前部署docker服务)
-docker run -d -v /usr/local/src/datastack.cfg:/app/datastack.cfg -it -p 8004:8004 -p 5001:5001 -p 9090:9090 -p 9093:9093 -p 3001:3001 registry.cn-beijing.aliyuncs.com/datastack/datastack:latest
+docker run -d -v /usr/local/src/datastack.cfg:/app/datastack.cfg -it -p 8004:8004 -p 5001:5001 -p 9090:9090 -p 9093:9093 -p 3000:3000 -p 3001:3001 registry.cn-beijing.aliyuncs.com/datastack/datastack:latest
 
 # 5.访问 DATAStack平台
 http://部署节点IP:8004
