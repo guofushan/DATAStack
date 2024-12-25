@@ -52,7 +52,7 @@ def getmaster(mysqlip,mysqlport,user,pwd):
         print(msg)
         sys.exit(1)
   else:  
-        sql_2="SELECT DISTINCT(SUBSTRING_INDEX(HOST, ':', 1)) AS slave_hostname FROM information_schema.processlist WHERE USER='zy_repl' AND command IN ('Binlog Dump', 'Binlog Dump GTID');"
+        sql_2="SELECT DISTINCT(SUBSTRING_INDEX(HOST, ':', 1)) AS slave_hostname FROM information_schema.processlist WHERE USER='test' AND command IN ('Binlog Dump', 'Binlog Dump GTID');"
         res_2=execute(mysqlip,mysqlport,user,pwd,'mysql',sql_2)
         if res_2==():
               sql_6="SHOW SLAVE status;"
@@ -93,7 +93,7 @@ def judge():
             mysqlip=args.mysqlip
             mysqlport=args.mysqlport
             mysqlport=int(mysqlport)
-            getmaster(mysqlip,mysqlport,'zy_repl','co5tvA1CWy')
+            getmaster(mysqlip,mysqlport,'zy_repl','test')
 
       except Exception as exec_error:
             print(exec_error)
