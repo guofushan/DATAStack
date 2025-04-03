@@ -36,7 +36,7 @@ DATAStack是一款数据库私有云平台，为企业用户提供数据库即�
 *   **集群创建** - 支持数据库实例一键部署。
 *   **数据库监控** - 内置OS、DB层链路监控模块。
 *   **自动备份** - 支持自定义备份策略，确保数据安全一致稳定。
-*   **高可用** - 秒级探测和切换，90%连接保持无影响。
+*   **高可用** - 秒级探测和切换，保障数据库服务可用性。
 *   **权限管理** - 支持页面化管理，创建用户、角色授权。
 *   **日志查看** - 支持页面汇总展示近期慢SQL。
 *   **Binlog回滚** - 支持页面操作解析binlog生成相应的SQL和回滚SQL。
@@ -96,7 +96,7 @@ http://部署节点IP:8004
 
 # 页面概况
 ![image](https://github.com/user-attachments/assets/5add2fa6-9623-4f40-949c-73fe82356a01)
-![image](https://github.com/user-attachments/assets/08bf23c7-1ebe-42ae-819a-0d7449f9e725)
+![image](https://github.com/user-attachments/assets/d8a6b738-4cbf-41d2-8da2-2bc394311cb7)
 ![11](https://github.com/guofushan/DATAStack/assets/48540932/1ac2cd3c-f7d6-4cfc-9100-2304ab04766f)
 ![clipboard4](https://github.com/guofushan/DATAStack/assets/48540932/0b23513b-9a12-43d8-aaf7-d1381fa7fda6)
 ![clipboard1](https://github.com/guofushan/DATAStack/assets/48540932/7daf1014-cea4-4bab-8c3d-4d232b40acf8)
